@@ -1,0 +1,282 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #050505;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid #b6ff00;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  color: #b6ff00;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff2d2d;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('images/hero.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeUp 1.2s ease;
+}
+
+.hero h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 90px;
+  text-transform: uppercase;
+  color: #b6ff00;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #ff2d2d;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b6ff00;
+  color: black;
+  transform: scale(1.05);
+}
+
+.tickets,
+.payment,
+.rules {
+  padding: 80px 40px;
+}
+
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ticket-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ticket-card {
+  width: 280px;
+  padding: 30px;
+  border: 2px solid #ffffff20;
+  transition: 0.4s;
+  position: relative;
+}
+
+.ticket-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.ticket-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ticket-card button {
+  background: #ff2d2d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ticket-card button:hover {
+  background: #b6ff00;
+  color: black;
+}
+
+.yellow {
+  background: #f2ef4f;
+  color: black;
+}
+
+.dark {
+  background: #111827;
+}
+
+.green {
+  background: #b6ff00;
+  color: black;
+}
+
+.payment-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.payment-image img {
+  width: 350px;
+  border: 4px solid white;
+  transform: rotate(-5deg);
+}
+
+.payment-text h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  color: #b6ff00;
+  margin-bottom: 20px;
+}
+
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.rule-item {
+  background: #111;
+  padding: 20px;
+  border-left: 6px solid #b6ff00;
+  transition: 0.3s;
+}
+
+.rule-item:hover {
+  background: #1e1e1e;
+  transform: translateX(10px);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0a0a0a;
+  border-top: 2px solid #b6ff00;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .payment-image img {
+    width: 100%;
+  }
+}
+.ticket-card button:active {
+  transform: scale(0.96);
+}
+
+.ticket-card button:hover {
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #b6ff00;
+  padding-bottom: 4px;
+}
+
+.rule-item:hover {
+  box-shadow: 0 0 20px rgba(182, 255, 0, 0.3);
+}
+
+.ticket-card:hover {
+  box-shadow: 0 0 30px rgba(255, 45, 45, 0.25);
+}

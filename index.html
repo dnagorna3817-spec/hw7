@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeatWave Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <a class="logo" href="meme.html">BeatWave</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#rules">Rules</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Festival Tickets</h1>
+      <p>Choose your ticket and become part of the biggest summer music event.</p>
+      <a href="#tickets" class="btn">Buy Tickets</a>
+    </div>
+  </section>
+
+  <section class="tickets" id="tickets">
+    <h2>Purchase Ticket</h2>
+
+    <div class="ticket-container">
+      <div class="ticket-card yellow">
+        <h3>2 Day Weekend</h3>
+        <p class="price">180 ₴</p>
+        <button onclick="showMessage('2 Day Weekend')">Purchase</button>
+      </div>
+
+      <div class="ticket-card dark">
+        <h3>VIP Season</h3>
+        <p class="price">2500 ₴</p>
+        <button onclick="showMessage('VIP Season')">Purchase</button>
+      </div>
+
+      <div class="ticket-card green">
+        <h3>Backstage Pass</h3>
+        <p class="price">5000 ₴</p>
+        <button onclick="showMessage('Backstage Pass')">Purchase</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment" id="payment">
+    <h2>Methods Of Payment</h2>
+
+    <div class="payment-content">
+      <div class="payment-image">
+        <img src="images/dance.png" alt="Concert crowd">
+      </div>
+
+      <div class="payment-text">
+        <h3>Cash Or Card</h3>
+        <p>We accept cash payments directly at the venue or online payments using bank cards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="rules" id="rules">
+    <h2>Festival Rules</h2>
+
+    <div class="rules-container">
+      <div class="rule-item">No outside alcohol</div>
+      <div class="rule-item">Bring your ticket ID</div>
+      <div class="rule-item">Respect other visitors</div>
+      <div class="rule-item">No dangerous items allowed</div>
+      <div class="rule-item">Follow staff instructions</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Instagram | TikTok | Facebook</p>
+    <p>Email: beatwavefestival@gmail.com</p>
+    <p>© 2026 BeatWave Festival</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
