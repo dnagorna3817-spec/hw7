@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(45deg, red, yellow, blue, lime, purple);
+  background-size: 400% 400%;
+  animation: backgroundMove 3s infinite alternate;
+  overflow: hidden;
+  text-align: center;
+  font-family: Comic Sans MS, cursive;
+}
+
+.crazy-title {
+  font-size: 50px;
+  color: white;
+  animation: blink 0.2s infinite, rotate 3s infinite linear;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  line-height: 200px;
+  font-size: 30px;
+  color: white;
+  animation: spin 2s infinite linear, shake 0.2s infinite;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.yellow {
+  background: orange;
+}
+
+.crazy-button {
+  padding: 20px 40px;
+  font-size: 24px;
+  background: hotpink;
+  color: yellow;
+  border: 5px dashed cyan;
+  cursor: pointer;
+  animation: bounce 0.5s infinite alternate;
+  transition: all 0.3s ease;
+}
+
+.crazy-button:hover {
+  transform: scale(1.5) rotate(20deg);
+  background: black;
+  color: red;
+}
+
+marquee {
+  font-size: 40px;
+  color: lime;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+@keyframes backgroundMove {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
